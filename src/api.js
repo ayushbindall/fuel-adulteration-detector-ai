@@ -1,18 +1,17 @@
+const API_BASE_URL = (
+    import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+
 async function handle(response) {
-    var data = await response.json().catch(function() {
-        return null;
-    });
+    const data = await response.json().catch(() => null);
 
     if (!response.ok) {
-        var detail = data && data.detail;
-        var message = "Request failed with status " + response.status;
+        const detail = data && data.detail;
+        let message = "Request failed with status " + response.status;
 
         if (typeof detail === "string") {
             message = detail;
         } else if (Array.isArray(detail)) {
-            message = detail.map(function(item) {
-                return item.msg || "Validation error";
-            }).join("; ");
+            message = detail.map(item => item.msg || "Validation error").join("; ");
         }
 
         throw new Error(message);
@@ -22,22 +21,24 @@ async function handle(response) {
 }
 
 function request(url, options) {
-    return fetch(url, options).then(handle).catch(function(error) {
-        if (error instanceof TypeError) {
-            throw new Error(
-                "Backend connection failed. Check whether FastAPI is running on port 8000."
-            );
-        }
+    return fetch(API_BASE_URL + url, options)
+        .then(handle)
+        .catch(error => {
+            if (error instanceof TypeError) {
+                throw new Error(
+                    "Backend connection failed. Check API URL, internet connection and CORS settings."
+                );
+            }
 
-        throw error;
-    });
+            throw error;
+        });
 }
 
 function qs(params) {
-    var searchParams = new URLSearchParams();
+    const searchParams = new URLSearchParams();
 
-    Object.keys(params || {}).forEach(function(key) {
-        var value = params[key];
+    Object.keys(params || {}).forEach(key => {
+        const value = params[key];
 
         if (value !== "" && value !== null && value !== undefined) {
             searchParams.append(key, value);
@@ -53,7 +54,7 @@ export const api = {
     },
 
     latest: function(source) {
-        var url = "/api/latest";
+        let url = "/api/latest";
 
         if (source) {
             url += "?source=" + encodeURIComponent(source);
@@ -63,8 +64,8 @@ export const api = {
     },
 
     history: function(params) {
-        var query = qs(params || {});
-        var url = "/api/history";
+        const query = qs(params || {});
+        let url = "/api/history";
 
         if (query) {
             url += "?" + query;
