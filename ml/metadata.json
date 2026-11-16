@@ -1,0 +1,83 @@
+{
+  "model_version": "fuel-clf-20261023",
+  "trained_at_utc": "2026-10-23T10:21:33.522054+00:00",
+  "task": "binary: Pure vs Adulterated (potential)",
+  "algorithm": "extra_trees",
+  "calibration": "isotonic (5-fold CV on training split)",
+  "feature_set": "hw_dielectric_temp",
+  "input_columns": [
+    "Fuel_Type",
+    "Temperature",
+    "Dielectric"
+  ],
+  "numeric_features": [
+    "Temperature",
+    "Dielectric"
+  ],
+  "categorical_features": {
+    "Fuel_Type": [
+      "Diesel",
+      "Kerosene",
+      "Petrol"
+    ]
+  },
+  "units": {
+    "Temperature": "degC",
+    "Dielectric": "relative permittivity (dimensionless)"
+  },
+  "training_ranges": {
+    "Temperature": [
+      20.0,
+      35.0
+    ],
+    "Dielectric": [
+      1.853,
+      45.869
+    ]
+  },
+  "valid_input_ranges": {
+    "Temperature": [
+      0.0,
+      60.0
+    ],
+    "Dielectric": [
+      1.0,
+      100.0
+    ]
+  },
+  "decision_threshold": 0.5,
+  "uncertain_band": [
+    0.35,
+    0.65
+  ],
+  "forbidden_inputs": [
+    "Adulterant",
+    "Adulteration_%",
+    "Label"
+  ],
+  "dataset": {
+    "file": "micro.xlsx",
+    "rows": 5600,
+    "train_rows": 4480,
+    "test_rows": 1120,
+    "class_counts": {
+      "Pure": 3600,
+      "Adulterated": 2000
+    },
+    "provenance": "Almost certainly SIMULATED (uniform random temperature, uncorrelated features, implausible petrol flash point). Metrics describe this dataset only."
+  },
+  "random_seed": 42,
+  "environment": {
+    "python": "3.12.3",
+    "sklearn": "1.8.0",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "platform": "Linux"
+  },
+  "limitations": [
+    "Trained on a simulated dataset; NOT evidence of real-world detection accuracy.",
+    "Dielectric input must be calibrated to relative permittivity; raw capacitance will give wrong answers.",
+    "Reliably flags only polar contaminants (water, ethanol, methanol). Hydrocarbon adulterants (diesel/kerosene/solvent/waste oil) are mostly missed at low percentages.",
+    "A prediction is NOT a certified laboratory result."
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "cv_table_train_only": [
+    {
+      "feature_set": "full_reference",
+      "model": "logistic_regression",
+      "accuracy": 0.841,
+      "precision": 0.8556,
+      "recall": 0.6681,
+      "f1": 0.7498,
+      "roc_auc": 0.8514,
+      "f1_std": 0.0187,
+      "roc_auc_std": 0.0171
+    },
+    {
+      "feature_set": "full_reference",
+      "model": "random_forest",
+      "accuracy": 0.9291,
+      "precision": 0.9626,
+      "recall": 0.8341,
+      "f1": 0.8936,
+      "roc_auc": 0.9449,
+      "f1_std": 0.0116,
+      "roc_auc_std": 0.0089
+    },
+    {
+      "feature_set": "full_reference",
+      "model": "extra_trees",
+      "accuracy": 0.9251,
+      "precision": 0.9884,
+      "recall": 0.7997,
+      "f1": 0.8839,
+      "roc_auc": 0.9456,
+      "f1_std": 0.0143,
+      "roc_auc_std": 0.0095
+    },
+    {
+      "feature_set": "full_reference",
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.9232,
+      "precision": 0.9428,
+      "recall": 0.8359,
+      "f1": 0.886,
+      "roc_auc": 0.9436,
+      "f1_std": 0.0131,
+      "roc_auc_std": 0.0123
+    },
+    {
+      "feature_set": "hw_dielectric_temp",
+      "model": "logistic_regression",
+      "accuracy": 0.8265,
+      "precision": 0.9965,
+      "recall": 0.5159,
+      "f1": 0.6794,
+      "roc_auc": 0.7897,
+      "f1_std": 0.0226,
+      "roc_auc_std": 0.0188
+    },
+    {
+      "feature_set": "hw_dielectric_temp",
+      "model": "random_forest",
+      "accuracy": 0.826,
+      "precision": 0.8468,
+      "recall": 0.6266,
+      "f1": 0.7198,
+      "roc_auc": 0.8143,
+      "f1_std": 0.0184,
+      "roc_auc_std": 0.0125
+    },
+    {
+      "feature_set": "hw_dielectric_temp",
+      "model": "extra_trees",
+      "accuracy": 0.8449,
+      "precision": 0.9595,
+      "recall": 0.5909,
+      "f1": 0.731,
+      "roc_auc": 0.8203,
+      "f1_std": 0.02,
+      "roc_auc_std": 0.014
+    },
+    {
+      "feature_set": "hw_dielectric_temp",
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.835,
+      "precision": 0.8966,
+      "recall": 0.6088,
+      "f1": 0.7246,
+      "roc_auc": 0.8177,
+      "f1_std": 0.0206,
+      "roc_auc_std": 0.0154
+    },
+    {
+      "feature_set": "hw_dielectric_only",
+      "model": "logistic_regression",
+      "accuracy": 0.8265,
+      "precision": 0.997,
+      "recall": 0.5156,
+      "f1": 0.6793,
+      "roc_auc": 0.7919,
+      "f1_std": 0.0234,
+      "roc_auc_std": 0.0183
+    },
+    {
+      "feature_set": "hw_dielectric_only",
+      "model": "random_forest",
+      "accuracy": 0.7977,
+      "precision": 0.7515,
+      "recall": 0.6484,
+      "f1": 0.6959,
+      "roc_auc": 0.8177,
+      "f1_std": 0.0201,
+      "roc_auc_std": 0.0134
+    },
+    {
+      "feature_set": "hw_dielectric_only",
+      "model": "extra_trees",
+      "accuracy": 0.8352,
+      "precision": 0.8968,
+      "recall": 0.6094,
+      "f1": 0.7251,
+      "roc_auc": 0.8243,
+      "f1_std": 0.0161,
+      "roc_auc_std": 0.0143
+    },
+    {
+      "feature_set": "hw_dielectric_only",
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.8454,
+      "precision": 0.9374,
+      "recall": 0.6081,
+      "f1": 0.7373,
+      "roc_auc": 0.8249,
+      "f1_std": 0.0204,
+      "roc_auc_std": 0.0143
+    },
+    {
+      "feature_set": "hw_plus_optical",
+      "model": "logistic_regression",
+      "accuracy": 0.8323,
+      "precision": 0.9228,
+      "recall": 0.5787,
+      "f1": 0.7111,
+      "roc_auc": 0.8111,
+      "f1_std": 0.023,
+      "roc_auc_std": 0.0156
+    },
+    {
+      "feature_set": "hw_plus_optical",
+      "model": "random_forest",
+      "accuracy": 0.8451,
+      "precision": 0.8857,
+      "recall": 0.6506,
+      "f1": 0.7498,
+      "roc_auc": 0.845,
+      "f1_std": 0.0174,
+      "roc_auc_std": 0.0148
+    },
+    {
+      "feature_set": "hw_plus_optical",
+      "model": "extra_trees",
+      "accuracy": 0.8459,
+      "precision": 0.9223,
+      "recall": 0.6206,
+      "f1": 0.7418,
+      "roc_auc": 0.8489,
+      "f1_std": 0.0218,
+      "roc_auc_std": 0.0154
+    },
+    {
+      "feature_set": "hw_plus_optical",
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.8381,
+      "precision": 0.8592,
+      "recall": 0.6537,
+      "f1": 0.7424,
+      "roc_auc": 0.8432,
+      "f1_std": 0.0114,
+      "roc_auc_std": 0.0122
+    }
+  ],
+  "chosen_model_per_feature_set": {
+    "full_reference": "random_forest",
+    "hw_dielectric_temp": "extra_trees",
+    "hw_dielectric_only": "hist_gradient_boosting",
+    "hw_plus_optical": "random_forest"
+  },
+  "heldout_test": {
+    "full_reference": {
+      "model": "random_forest",
+      "accuracy": 0.925,
+      "precision": 0.9566473988439307,
+      "recall": 0.8275,
+      "f1": 0.8873994638069705,
+      "roc_auc": 0.9409618055555555,
+      "specificity": 0.9791666666666666,
+      "brier": 0.05993056022453238,
+      "confusion_matrix": {
+        "labels": [
+          "Pure",
+          "Adulterated"
+        ],
+        "matrix": [
+          [
+            705,
+            15
+          ],
+          [
+            69,
+            331
+          ]
+        ]
+      },
+      "n_test": 1120
+    },
+    "hw_dielectric_temp": {
+      "model": "extra_trees",
+      "accuracy": 0.8482142857142857,
+      "precision": 0.9752066115702479,
+      "recall": 0.59,
+      "f1": 0.735202492211838,
+      "roc_auc": 0.8307430555555555,
+      "specificity": 0.9916666666666667,
+      "brier": 0.12175216929579621,
+      "confusion_matrix": {
+        "labels": [
+          "Pure",
+          "Adulterated"
+        ],
+        "matrix": [
+          [
+            714,
+            6
+          ],
+          [
+            164,
+            236
+          ]
+        ]
+      },
+      "n_test": 1120
+    },
+    "hw_dielectric_only": {
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.8553571428571428,
+      "precision": 0.9877049180327869,
+      "recall": 0.6025,
+      "f1": 0.7484472049689441,
+      "roc_auc": 0.8320989583333334,
+      "specificity": 0.9958333333333333,
+      "brier": 0.11707434209646281,
+      "confusion_matrix": {
+        "labels": [
+          "Pure",
+          "Adulterated"
+        ],
+        "matrix": [
+          [
+            717,
+            3
+          ],
+          [
+            159,
+            241
+          ]
+        ]
+      },
+      "n_test": 1120
+    },
+    "hw_plus_optical": {
+      "model": "random_forest",
+      "accuracy": 0.8598214285714286,
+      "precision": 0.9584905660377359,
+      "recall": 0.635,
+      "f1": 0.7639097744360902,
+      "roc_auc": 0.8592500000000001,
+      "specificity": 0.9847222222222223,
+      "brier": 0.11043557332459097,
+      "confusion_matrix": {
+        "labels": [
+          "Pure",
+          "Adulterated"
+        ],
+        "matrix": [
+          [
+            709,
+            11
+          ],
+          [
+            146,
+            254
+          ]
+        ]
+      },
+      "n_test": 1120
+    }
+  },
+  "leave_one_adulterant_out": {
+    "full_reference": {
+      "Diesel": {
+        "recall_unseen_adulterant": 0.496,
+        "specificity_pure": 0.9917
+      },
+      "Ethanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9833
+      },
+      "Kerosene": {
+        "recall_unseen_adulterant": 0.564,
+        "specificity_pure": 0.9931
+      },
+      "Methanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9833
+      },
+      "Solvent": {
+        "recall_unseen_adulterant": 0.368,
+        "specificity_pure": 0.9917
+      },
+      "WasteOil": {
+        "recall_unseen_adulterant": 0.5653,
+        "specificity_pure": 0.9889
+      },
+      "Water": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9833
+      }
+    },
+    "hw_dielectric_temp": {
+      "Diesel": {
+        "recall_unseen_adulterant": 0.104,
+        "specificity_pure": 0.9931
+      },
+      "Ethanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9639
+      },
+      "Kerosene": {
+        "recall_unseen_adulterant": 0.04,
+        "specificity_pure": 0.9861
+      },
+      "Methanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9764
+      },
+      "Solvent": {
+        "recall_unseen_adulterant": 0.044,
+        "specificity_pure": 0.9861
+      },
+      "WasteOil": {
+        "recall_unseen_adulterant": 0.2213,
+        "specificity_pure": 0.9986
+      },
+      "Water": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9611
+      }
+    },
+    "hw_dielectric_only": {
+      "Diesel": {
+        "recall_unseen_adulterant": 0.2,
+        "specificity_pure": 0.9792
+      },
+      "Ethanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9667
+      },
+      "Kerosene": {
+        "recall_unseen_adulterant": 0.1,
+        "specificity_pure": 0.9764
+      },
+      "Methanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9653
+      },
+      "Solvent": {
+        "recall_unseen_adulterant": 0.108,
+        "specificity_pure": 0.9806
+      },
+      "WasteOil": {
+        "recall_unseen_adulterant": 0.296,
+        "specificity_pure": 0.9778
+      },
+      "Water": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9667
+      }
+    },
+    "hw_plus_optical": {
+      "Diesel": {
+        "recall_unseen_adulterant": 0.24,
+        "specificity_pure": 0.9375
+      },
+      "Ethanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9222
+      },
+      "Kerosene": {
+        "recall_unseen_adulterant": 0.236,
+        "specificity_pure": 0.9486
+      },
+      "Methanol": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9167
+      },
+      "Solvent": {
+        "recall_unseen_adulterant": 0.156,
+        "specificity_pure": 0.9472
+      },
+      "WasteOil": {
+        "recall_unseen_adulterant": 0.3467,
+        "specificity_pure": 0.9486
+      },
+      "Water": {
+        "recall_unseen_adulterant": 1.0,
+        "specificity_pure": 0.9125
+      }
+    }
+  },
+  "deployed": {
+    "feature_set": "hw_dielectric_temp",
+    "feature_importance_permutation_auc": {
+      "Fuel_Type": {
+        "mean_auc_drop": 0.114,
+        "std": 0.0064
+      },
+      "Temperature": {
+        "mean_auc_drop": -0.002,
+        "std": 0.0078
+      },
+      "Dielectric": {
+        "mean_auc_drop": 0.326,
+        "std": 0.0129
+      }
+    },
+    "oof_recall_by_adulterant_and_percent": {
+      "5": {
+        "Diesel": 0.08,
+        "Ethanol": 1.0,
+        "Kerosene": 0.02,
+        "Methanol": 1.0,
+        "Solvent": 0.08,
+        "WasteOil": 0.093,
+        "Water": 1.0
+      },
+      "10": {
+        "Diesel": 0.12,
+        "Ethanol": 1.0,
+        "Kerosene": 0.04,
+        "Methanol": 1.0,
+        "Solvent": 0.04,
+        "WasteOil": 0.133,
+        "Water": 1.0
+      },
+      "20": {
+        "Diesel": 0.08,
+        "Ethanol": 1.0,
+        "Kerosene": 0.08,
+        "Methanol": 1.0,
+        "Solvent": 0.06,
+        "WasteOil": 0.28,
+        "Water": 1.0
+      },
+      "30": {
+        "Diesel": 0.12,
+        "Ethanol": 1.0,
+        "Kerosene": 0.12,
+        "Methanol": 1.0,
+        "Solvent": 0.3,
+        "WasteOil": 0.267,
+        "Water": 1.0
+      },
+      "50": {
+        "Diesel": 0.64,
+        "Ethanol": 1.0,
+        "Kerosene": 0.18,
+        "Methanol": 1.0,
+        "Solvent": 0.3,
+        "WasteOil": 0.587,
+        "Water": 1.0
+      }
+    },
+    "oof_specificity_pure": 0.9844
+  }
+}
